@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="FireGento_PdfPayone_Model_Observer" namespace="" name="FireGento_PdfPayone_Model_Observer" abstract="false" final="false" start="29" end="64">
+  <file path="/var/www/magento192/.modman/firegento-pdf-payone/src/app/code/community/FireGento/PdfPayone/Model" file="Observer.php" realpath="/var/www/magento192/.modman/firegento-pdf-payone/src/app/code/community/FireGento/PdfPayone/Model/Observer.php" size="2308" time="2016-04-19T10:16:07+00:00" unixtime="1461060967" sha1="eba118018958b092dd3b8dcbd7f23ec874d26d5e" relative="app/code/community/FireGento/PdfPayone/Model/Observer.php"/>
+  <docblock>
+    <description compact="Adds the detailed PAYONE payment information in the comments section of the FireGento PDF invoices."/>
+    <category value="FireGento"/>
+    <package value="FireGento_PdfPayone"/>
+    <author value="FireGento Team &lt;team@firegento.com&gt;"/>
+  </docblock>
+  <method name="firegentoPdfInvoiceInsertNote" start="39" end="62" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Adds the detailed PAYONE payment information in the comments section of the FireGento PDF invoices."/>
+      <param type="object" variable="$observer">
+        <type full="Varien_Event_Observer" namespace="" name="Varien_Event_Observer"/>
+      </param>
+      <return type="object">
+        <type full="$this" namespace="" name="$this"/>
+      </return>
+    </docblock>
+    <parameter name="observer" byreference="false" type="object">
+      <type full="Varien_Event_Observer" namespace="" name="Varien_Event_Observer"/>
+    </parameter>
+    <inline>
+      <comment value="the default toPdf method does not provide the full payment instructions, so that we use our own template" line="54"/>
+    </inline>
+  </method>
+</class>

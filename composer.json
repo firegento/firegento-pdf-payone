@@ -1,0 +1,13 @@
+{
+  "name": "firegento/pdf-payone",
+  "license": ["GPL-3.0"],
+  "type": "magento-module",
+  "description": "FireGento Pdf PAYONE adds the detailed PAYONE payment information on the FireGento PDF invoices.",
+  "homepage": "https://github.com/firegento/firegento-pdf-payone",
+  "suggest": {
+    "magento-hackathon/magento-composer-installer": "Magento composer installer (or a replacement) is needed to install this packages"
+  },
+  "require": {
+    "firegento/pdf": "1.*"
+  }
+}
